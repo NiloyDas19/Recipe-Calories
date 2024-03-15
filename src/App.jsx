@@ -51,7 +51,7 @@ function App() {
     const updateCurrentlyCooking = [...currentlyCookings, ...newCurrentlyCooking];
     setWantToCooks(updateWantToCookie);
     let newTime = 0, newCalorie = 0;
-    for(const cookings of updateCurrentlyCooking) {
+    for (const cookings of updateCurrentlyCooking) {
       newTime += cookings.preparing_time;
       newCalorie += cookings.calories;
     }

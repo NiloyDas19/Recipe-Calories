@@ -1,5 +1,7 @@
 import fireImage from '../../assets/fire.png'
 import timeImage from '../../assets/time.png'
+import PropTypes from 'prop-types';
+
 
 const Recipes = ({ recipe, handleWantToCook}) => {
     console.log(recipe);
@@ -43,5 +45,10 @@ const Recipes = ({ recipe, handleWantToCook}) => {
         </div>
     );
 };
+
+Recipes.propTypes = {
+    recipe: PropTypes.object.isRequired,
+    handleWantToCook: PropTypes.func.isRequired,
+}
 
 export default Recipes;

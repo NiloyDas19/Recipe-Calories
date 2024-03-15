@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const Cooking = ({ currentlyCooking }) => {
     console.log(currentlyCooking);
@@ -12,4 +13,7 @@ const Cooking = ({ currentlyCooking }) => {
     );
 };
 
+Cooking.propTypes = {
+    currentlyCooking: PropTypes.object.isRequired,
+}
 export default Cooking;
