@@ -52,8 +52,8 @@ const Header = () => {
             <div className="hero min-h-screen rounded-xl" style={{ backgroundImage: `url(${bannerImage})` }}>
                 <div className="hero-content text-center text-neutral-content">
                     <div className=" space-y-5">
-                        <h1 className="mb-5  text-3xl md:text-5xl font-bold">Discover an exceptional cooking <br /> class tailored for you!</h1>
-                        <p className="mb-5">Embark on a culinary journey like no other with our bespoke cooking classes. Whether you're a novice or a seasoned chef, our expert instructors will tailor each session to your skill level and preferences. Unleash your inner chef, explore new flavors, and master the art of cooking with our exceptional classes designed just for you!</p>
+                        <h1 className="mb-5  text-3xl md:text-6xl font-bold text-white">Discover an exceptional cooking <br /> class tailored for you!</h1>
+                        <p className="mb-5 text-xl">Embark on a culinary journey like no other with our bespoke cooking classes. Whether you're a novice or a seasoned chef, our expert instructors will tailor each session to your skill level and preferences. Unleash your inner chef, explore new flavors, and master the art of cooking with our exceptional classes designed just for you!</p>
                         <div className='space-x-3 md:space-x-5'>
                             <button className="btn bg-green-500 rounded-full">Explore Now</button>
                             <button className="btn  btn-outline rounded-full text-white">Our Feedback</button>

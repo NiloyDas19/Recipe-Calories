@@ -8,6 +8,7 @@ import Cooking from './components/Cooking/Cooking';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 function App() {
   const [recipes, setRecipes] = useState([]);
 
@@ -83,7 +84,7 @@ function App() {
         <div className='space-y-5'>
           <div className='text-center space-y-5'>
             <h3 className='text-3xl font-extrabold'>Our Recipes</h3>
-            <p className='px-16'>
+            <p className='px-16 font-medium'>
             Explore 'Our Recipes'—your go-to for delicious dishes. From simple staples to gourmet delights, find easy-to-follow recipes that bring joy to your table.Unlock the flavors of 'Our Recipes'—where every dish is a culinary adventure waiting to be savored.
             </p>
           </div>
@@ -151,8 +152,8 @@ function App() {
                       <tr className='bg-gray-50'>
                         <td></td>
                         <td></td>
-                        <td>Total Time = {time} minutes</td>
-                        <td>Total Calories = {calories} calories</td>
+                        <td className='font-semibold'>Total Time = <br /> {time} minutes</td>
+                        <td className='font-semibold'>Total Calories = <br /> {calories} calories</td>
                       </tr>
                     </tbody>
                   </table>
