@@ -69,7 +69,7 @@ function App() {
   }
 
   const showToastMessage = () => {
-    toast.success("This is recipe is already added !", {
+    toast.success("This recipe is already added !", {
       autoClose: 1000
     });
   };
@@ -148,7 +148,7 @@ function App() {
                       {
                         currentlyCookings.map((currentlyCooking) => <Cooking key={currentlyCooking.recipe_id} currentlyCooking={currentlyCooking}></Cooking>)
                       }
-                      <tr>
+                      <tr className='bg-gray-50'>
                         <td></td>
                         <td></td>
                         <td>Total Time = {time} minutes</td>

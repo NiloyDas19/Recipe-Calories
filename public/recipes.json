@@ -22,7 +22,7 @@
       "recipe_id": 3,
       "recipe_name": "Vegetable Stir Fry",
       "short_description": "A healthy and colorful mix of fresh vegetables stir-fried to perfection.",
-      "ingredients": ["300 g mixed vegetables (bell peppers, broccoli, carrots)", "150 g tofu", "3 tbsp soy sauce", "2 cloves garlic, minced"],
+      "ingredients": ["300 g mixed vegetables", "150 g tofu", "3 tbsp soy sauce", "2 cloves garlic, minced"],
       "preparing_time": 25,
       "calories": 220
     },
