@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import Recipes from './components/Recipes/Recipes';
 import Cook from './components/Cook/Cook';
 import Cooking from './components/Cooking/Cooking';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -21,6 +23,8 @@ function App() {
       .then(res => res.json())
       .then(data => setRecipes(data));
   }, []);
+
+
 
   const handleWantToCook = (wantToCookID) => {
     console.log(wantToCookID);
@@ -42,6 +46,10 @@ function App() {
       const updateWantToCookie = [...wantToCooks, newWantToCookie];
       setWantToCooks(updateWantToCookie);
     }
+    else {
+      showToastMessage();
+    }
+
   };
 
   const handlePrepare = (prepareRecipeID) => {
@@ -59,6 +67,12 @@ function App() {
     setCalorie(newCalorie);
     setCurrentlyCookings(updateCurrentlyCooking);
   }
+
+  const showToastMessage = () => {
+    toast.success("This is recipe is already added !", {
+      autoClose: 1000
+    });
+  };
 
   return (
     <>
@@ -147,6 +161,7 @@ function App() {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </>
   )
