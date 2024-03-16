@@ -83,8 +83,8 @@ function App() {
         <div className='space-y-5'>
           <div className='text-center space-y-5'>
             <h3 className='text-3xl font-extrabold'>Our Recipes</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. <br></br>Eget urna volutpat curabitur elementum mauris aenean neque.
+            <p className='px-16'>
+            Explore 'Our Recipes'—your go-to for delicious dishes. From simple staples to gourmet delights, find easy-to-follow recipes that bring joy to your table.Unlock the flavors of 'Our Recipes'—where every dish is a culinary adventure waiting to be savored.
             </p>
           </div>
           <div className='flex flex-col md:flex-row gap-5'>
