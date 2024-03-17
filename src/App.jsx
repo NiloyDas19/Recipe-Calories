@@ -90,7 +90,7 @@ function App() {
           </div>
           <div className='flex flex-col md:flex-row gap-5'>
             {/* this is for recipes */}
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-2 flex-1'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 flex-1'>
               {
                 recipes.map((recipe) => <Recipes key={recipe.id} recipe={recipe} handleWantToCook={handleWantToCook}></Recipes>)
               }
@@ -152,8 +152,8 @@ function App() {
                       <tr className='bg-gray-50'>
                         <td></td>
                         <td></td>
-                        <td className='font-semibold'>Total Time = <br /> {time} minutes</td>
-                        <td className='font-semibold'>Total Calories = <br /> {calories} calories</td>
+                        <td className='font-semibold'>Total Time =  {time} minutes</td>
+                        <td className='font-semibold'>Total Calories =  {calories} calories</td>
                       </tr>
                     </tbody>
                   </table>

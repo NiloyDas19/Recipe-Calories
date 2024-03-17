@@ -31,12 +31,12 @@ const Recipes = ({ recipe, handleWantToCook}) => {
             </div>
             <div className="space-y-2">
                 <div className="flex gap-5">
-                    <div className='flex gap-1'>
-                        <img src={timeImage} alt="" />
+                    <div className='flex gap-1 items-center justify-center'>
+                        <img src={timeImage} className='w-8 h-8' alt="" />
                         <p>{preparing_time} minutes</p>
                     </div>
-                    <div className='flex gap-1'>
-                        <img src={fireImage} alt="" />
+                    <div className='flex gap-1 items-center justify-center'>
+                        <img src={fireImage} className='w-8 h-8' alt="" />
                         <p>{calories} calories</p>
                     </div>
                 </div>
