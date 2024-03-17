@@ -13,7 +13,7 @@ const Recipes = ({ recipe, handleWantToCook}) => {
             </div>
             <div className="space-y-2">
                 <h2 className="text-2xl font-bold">{recipe_name}</h2>
-                <p className="font-thin">{short_description}</p>
+                <p className="font-light">{short_description}</p>
             </div>
             <div>
                 <hr />
