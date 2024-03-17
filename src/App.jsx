@@ -120,7 +120,7 @@ function App() {
                     </thead>
                     <tbody>
                       {
-                        wantToCooks.map((wantToCook) => <Cook key={wantToCook.recipe_id} wantToCook={wantToCook} handlePrepare={handlePrepare}></Cook>)
+                        wantToCooks.map((wantToCook, index) => <Cook key={wantToCook.recipe_id} wantToCook={wantToCook} index = {index} handlePrepare={handlePrepare}></Cook>)
                       }
                     </tbody>
                   </table>
@@ -147,7 +147,7 @@ function App() {
                     </thead>
                     <tbody>
                       {
-                        currentlyCookings.map((currentlyCooking) => <Cooking key={currentlyCooking.recipe_id} currentlyCooking={currentlyCooking}></Cooking>)
+                        currentlyCookings.map((currentlyCooking, index) => <Cooking key={currentlyCooking.recipe_id} currentlyCooking={currentlyCooking} index = {index}></Cooking>)
                       }
                       <tr className='bg-gray-50'>
                         <td></td>

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-const Cook = ({wantToCook, handlePrepare}) => {
+const Cook = ({wantToCook, index, handlePrepare}) => {
     console.log(wantToCook);
     const {recipe_id, recipe_name, preparing_time, calories} = wantToCook; 
     return (
         <tr className="bg-gray-50">
-            <td>{recipe_id}</td>
+            <td>{index + 1}</td>
             <td>{recipe_name}</td>
             <td>{preparing_time} minutes</td>
             <td>{calories} calories</td>
@@ -17,6 +17,7 @@ const Cook = ({wantToCook, handlePrepare}) => {
 Cook.propTypes = {
     wantToCook : PropTypes.object.isRequired,
     handlePrepare : PropTypes.func.isRequired,
+    index : PropTypes.number.isRequired,
 }
 
 export default Cook;
