@@ -88,16 +88,16 @@ function App() {
             Explore Our Recipes—your go-to for delicious dishes. From simple staples to gourmet delights, find easy-to-follow recipes that bring joy to your table.Unlock the flavors of Our Recipes—where every dish is a culinary adventure waiting to be savored.
             </p>
           </div>
-          <div className='flex flex-col md:flex-row gap-5'>
+          <div className='flex flex-col md:flex-row gap-2'>
             {/* this is for recipes */}
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 flex-1'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 w-full md:w-1/2 lg:w-3/5'>
               {
                 recipes.map((recipe) => <Recipes key={recipe.id} recipe={recipe} handleWantToCook={handleWantToCook}></Recipes>)
               }
             </div>
 
             {/* this is for calculation */}
-            <div className='flex-1 space-y-4'>
+            <div className='w-full md:w-1/2 lg:w-2/5 space-y-4 rounded-xl border-2'>
 
               {/* Want to cook */}
               <div className='space-y-4'>
